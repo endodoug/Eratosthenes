@@ -22,6 +22,9 @@
 		B7CDCA671F7071C200001ADC /* Assets.xcassets */ = {isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; path = Assets.xcassets; sourceTree = "<group>"; };
 		B7CDCA6A1F7071C200001ADC /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; name = Base; path = Base.lproj/LaunchScreen.storyboard; sourceTree = "<group>"; };
 		B7CDCA6C1F7071C200001ADC /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
+		B7CDCA731F70730900001ADC /* UIImage+Extensions.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = "UIImage+Extensions.swift"; sourceTree = "<group>"; };
+		B7CDCA741F70731300001ADC /* AsyncImageView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AsyncImageView.swift; sourceTree = "<group>"; };
+		B7CDCA751F70732000001ADC /* SystemTraceHelpers.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = SystemTraceHelpers.swift; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -54,6 +57,7 @@
 		B7CDCA5F1F7071C200001ADC /* Eratosthenes */ = {
 			isa = PBXGroup;
 			children = (
+				B7CDCA721F7072D400001ADC /* HelperClasses-Instruments */,
 				B7CDCA601F7071C200001ADC /* AppDelegate.swift */,
 				B7CDCA621F7071C200001ADC /* ViewController.swift */,
 				B7CDCA641F7071C200001ADC /* Main.storyboard */,
@@ -62,6 +66,16 @@
 				B7CDCA6C1F7071C200001ADC /* Info.plist */,
 			);
 			path = Eratosthenes;
+			sourceTree = "<group>";
+		};
+		B7CDCA721F7072D400001ADC /* HelperClasses-Instruments */ = {
+			isa = PBXGroup;
+			children = (
+				B7CDCA741F70731300001ADC /* AsyncImageView.swift */,
+				B7CDCA751F70732000001ADC /* SystemTraceHelpers.swift */,
+				B7CDCA731F70730900001ADC /* UIImage+Extensions.swift */,
+			);
+			path = "HelperClasses-Instruments";
 			sourceTree = "<group>";
 		};
 /* End PBXGroup section */
