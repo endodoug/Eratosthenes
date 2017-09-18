@@ -14,6 +14,19 @@
 		B7CDCA6B1F7071C200001ADC /* LaunchScreen.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = B7CDCA691F7071C200001ADC /* LaunchScreen.storyboard */; };
 /* End PBXBuildFile section */
 
+/* Begin PBXCopyFilesBuildPhase section */
+		B7A9DFF01F70811300372DA0 /* Embed Frameworks */ = {
+			isa = PBXCopyFilesBuildPhase;
+			buildActionMask = 2147483647;
+			dstPath = "";
+			dstSubfolderSpec = 10;
+			files = (
+			);
+			name = "Embed Frameworks";
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+/* End PBXCopyFilesBuildPhase section */
+
 /* Begin PBXFileReference section */
 		B7CDCA5D1F7071C200001ADC /* Eratosthenes.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = Eratosthenes.app; sourceTree = BUILT_PRODUCTS_DIR; };
 		B7CDCA601F7071C200001ADC /* AppDelegate.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AppDelegate.swift; sourceTree = "<group>"; };
@@ -88,6 +101,7 @@
 				B7CDCA591F7071C200001ADC /* Sources */,
 				B7CDCA5A1F7071C200001ADC /* Frameworks */,
 				B7CDCA5B1F7071C200001ADC /* Resources */,
+				B7A9DFF01F70811300372DA0 /* Embed Frameworks */,
 			);
 			buildRules = (
 			);

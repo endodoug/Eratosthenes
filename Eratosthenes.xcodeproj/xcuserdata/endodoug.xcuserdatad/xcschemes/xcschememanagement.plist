@@ -7,6 +7,21 @@
 		<key>Eratosthenes.xcscheme</key>
 		<dict>
 			<key>orderHint</key>
+			<integer>1</integer>
+		</dict>
+		<key>EratosthenesFW.xcscheme</key>
+		<dict>
+			<key>orderHint</key>
+			<integer>2</integer>
+		</dict>
+		<key>PlaygroundFW.xcscheme</key>
+		<dict>
+			<key>orderHint</key>
+			<integer>3</integer>
+		</dict>
+		<key>class GridView : UIView {   var rowCount: Int { get set }   var columnCount: Int { get set }   var lineColor: UIColor { get set }   var lineWidth: CGFloat { get set }   override func draw(_ rect: CGRect) -&gt; &lt;&lt;error type&gt;&gt; EratosthenesFW.xcscheme</key>
+		<dict>
+			<key>orderHint</key>
 			<integer>0</integer>
 		</dict>
 	</dict>
