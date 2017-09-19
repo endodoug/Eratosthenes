@@ -7,12 +7,27 @@
 	objects = {
 
 /* Begin PBXBuildFile section */
+		B7A9DFFB1F70B91E00372DA0 /* EratPlayground.h in Headers */ = {isa = PBXBuildFile; fileRef = B7A9DFF91F70B91E00372DA0 /* EratPlayground.h */; settings = {ATTRIBUTES = (Public, ); }; };
+		B7A9DFFE1F70B91E00372DA0 /* EratPlayground.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = B7A9DFF71F70B91E00372DA0 /* EratPlayground.framework */; };
+		B7A9DFFF1F70B91E00372DA0 /* EratPlayground.framework in Embed Frameworks */ = {isa = PBXBuildFile; fileRef = B7A9DFF71F70B91E00372DA0 /* EratPlayground.framework */; settings = {ATTRIBUTES = (CodeSignOnCopy, RemoveHeadersOnCopy, ); }; };
+		B7A9E0041F70B96900372DA0 /* Hello.swift in Sources */ = {isa = PBXBuildFile; fileRef = B7A9E0031F70B96900372DA0 /* Hello.swift */; };
+		B7A9E0051F70B96900372DA0 /* Hello.swift in Sources */ = {isa = PBXBuildFile; fileRef = B7A9E0031F70B96900372DA0 /* Hello.swift */; };
 		B7CDCA611F7071C200001ADC /* AppDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = B7CDCA601F7071C200001ADC /* AppDelegate.swift */; };
 		B7CDCA631F7071C200001ADC /* ViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = B7CDCA621F7071C200001ADC /* ViewController.swift */; };
 		B7CDCA661F7071C200001ADC /* Main.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = B7CDCA641F7071C200001ADC /* Main.storyboard */; };
 		B7CDCA681F7071C200001ADC /* Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = B7CDCA671F7071C200001ADC /* Assets.xcassets */; };
 		B7CDCA6B1F7071C200001ADC /* LaunchScreen.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = B7CDCA691F7071C200001ADC /* LaunchScreen.storyboard */; };
 /* End PBXBuildFile section */
+
+/* Begin PBXContainerItemProxy section */
+		B7A9DFFC1F70B91E00372DA0 /* PBXContainerItemProxy */ = {
+			isa = PBXContainerItemProxy;
+			containerPortal = B7CDCA551F7071C200001ADC /* Project object */;
+			proxyType = 1;
+			remoteGlobalIDString = B7A9DFF61F70B91E00372DA0;
+			remoteInfo = EratPlayground;
+		};
+/* End PBXContainerItemProxy section */
 
 /* Begin PBXCopyFilesBuildPhase section */
 		B7A9DFF01F70811300372DA0 /* Embed Frameworks */ = {
@@ -21,6 +36,7 @@
 			dstPath = "";
 			dstSubfolderSpec = 10;
 			files = (
+				B7A9DFFF1F70B91E00372DA0 /* EratPlayground.framework in Embed Frameworks */,
 			);
 			name = "Embed Frameworks";
 			runOnlyForDeploymentPostprocessing = 0;
@@ -28,6 +44,10 @@
 /* End PBXCopyFilesBuildPhase section */
 
 /* Begin PBXFileReference section */
+		B7A9DFF71F70B91E00372DA0 /* EratPlayground.framework */ = {isa = PBXFileReference; explicitFileType = wrapper.framework; includeInIndex = 0; path = EratPlayground.framework; sourceTree = BUILT_PRODUCTS_DIR; };
+		B7A9DFF91F70B91E00372DA0 /* EratPlayground.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = EratPlayground.h; sourceTree = "<group>"; };
+		B7A9DFFA1F70B91E00372DA0 /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
+		B7A9E0031F70B96900372DA0 /* Hello.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Hello.swift; sourceTree = "<group>"; };
 		B7CDCA5D1F7071C200001ADC /* Eratosthenes.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = Eratosthenes.app; sourceTree = BUILT_PRODUCTS_DIR; };
 		B7CDCA601F7071C200001ADC /* AppDelegate.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AppDelegate.swift; sourceTree = "<group>"; };
 		B7CDCA621F7071C200001ADC /* ViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ViewController.swift; sourceTree = "<group>"; };
@@ -41,20 +61,39 @@
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
-		B7CDCA5A1F7071C200001ADC /* Frameworks */ = {
+		B7A9DFF31F70B91E00372DA0 /* Frameworks */ = {
 			isa = PBXFrameworksBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
+		B7CDCA5A1F7071C200001ADC /* Frameworks */ = {
+			isa = PBXFrameworksBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				B7A9DFFE1F70B91E00372DA0 /* EratPlayground.framework in Frameworks */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
 /* End PBXFrameworksBuildPhase section */
 
 /* Begin PBXGroup section */
+		B7A9DFF81F70B91E00372DA0 /* EratPlayground */ = {
+			isa = PBXGroup;
+			children = (
+				B7A9DFF91F70B91E00372DA0 /* EratPlayground.h */,
+				B7A9DFFA1F70B91E00372DA0 /* Info.plist */,
+			);
+			path = EratPlayground;
+			sourceTree = "<group>";
+		};
 		B7CDCA541F7071C200001ADC = {
 			isa = PBXGroup;
 			children = (
+				B7A9E0031F70B96900372DA0 /* Hello.swift */,
 				B7CDCA5F1F7071C200001ADC /* Eratosthenes */,
+				B7A9DFF81F70B91E00372DA0 /* EratPlayground */,
 				B7CDCA5E1F7071C200001ADC /* Products */,
 			);
 			sourceTree = "<group>";
@@ -63,6 +102,7 @@
 			isa = PBXGroup;
 			children = (
 				B7CDCA5D1F7071C200001ADC /* Eratosthenes.app */,
+				B7A9DFF71F70B91E00372DA0 /* EratPlayground.framework */,
 			);
 			name = Products;
 			sourceTree = "<group>";
@@ -93,7 +133,36 @@
 		};
 /* End PBXGroup section */
 
+/* Begin PBXHeadersBuildPhase section */
+		B7A9DFF41F70B91E00372DA0 /* Headers */ = {
+			isa = PBXHeadersBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				B7A9DFFB1F70B91E00372DA0 /* EratPlayground.h in Headers */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+/* End PBXHeadersBuildPhase section */
+
 /* Begin PBXNativeTarget section */
+		B7A9DFF61F70B91E00372DA0 /* EratPlayground */ = {
+			isa = PBXNativeTarget;
+			buildConfigurationList = B7A9E0021F70B91E00372DA0 /* Build configuration list for PBXNativeTarget "EratPlayground" */;
+			buildPhases = (
+				B7A9DFF21F70B91E00372DA0 /* Sources */,
+				B7A9DFF31F70B91E00372DA0 /* Frameworks */,
+				B7A9DFF41F70B91E00372DA0 /* Headers */,
+				B7A9DFF51F70B91E00372DA0 /* Resources */,
+			);
+			buildRules = (
+			);
+			dependencies = (
+			);
+			name = EratPlayground;
+			productName = EratPlayground;
+			productReference = B7A9DFF71F70B91E00372DA0 /* EratPlayground.framework */;
+			productType = "com.apple.product-type.framework";
+		};
 		B7CDCA5C1F7071C200001ADC /* Eratosthenes */ = {
 			isa = PBXNativeTarget;
 			buildConfigurationList = B7CDCA6F1F7071C200001ADC /* Build configuration list for PBXNativeTarget "Eratosthenes" */;
@@ -106,6 +175,7 @@
 			buildRules = (
 			);
 			dependencies = (
+				B7A9DFFD1F70B91E00372DA0 /* PBXTargetDependency */,
 			);
 			name = Eratosthenes;
 			productName = Eratosthenes;
@@ -122,6 +192,11 @@
 				LastUpgradeCheck = 0900;
 				ORGANIZATIONNAME = "Doug Harper";
 				TargetAttributes = {
+					B7A9DFF61F70B91E00372DA0 = {
+						CreatedOnToolsVersion = 9.0;
+						LastSwiftMigration = 0900;
+						ProvisioningStyle = Automatic;
+					};
 					B7CDCA5C1F7071C200001ADC = {
 						CreatedOnToolsVersion = 9.0;
 						ProvisioningStyle = Automatic;
@@ -142,11 +217,19 @@
 			projectRoot = "";
 			targets = (
 				B7CDCA5C1F7071C200001ADC /* Eratosthenes */,
+				B7A9DFF61F70B91E00372DA0 /* EratPlayground */,
 			);
 		};
 /* End PBXProject section */
 
 /* Begin PBXResourcesBuildPhase section */
+		B7A9DFF51F70B91E00372DA0 /* Resources */ = {
+			isa = PBXResourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
 		B7CDCA5B1F7071C200001ADC /* Resources */ = {
 			isa = PBXResourcesBuildPhase;
 			buildActionMask = 2147483647;
@@ -160,16 +243,33 @@
 /* End PBXResourcesBuildPhase section */
 
 /* Begin PBXSourcesBuildPhase section */
+		B7A9DFF21F70B91E00372DA0 /* Sources */ = {
+			isa = PBXSourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				B7A9E0051F70B96900372DA0 /* Hello.swift in Sources */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
 		B7CDCA591F7071C200001ADC /* Sources */ = {
 			isa = PBXSourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
 				B7CDCA631F7071C200001ADC /* ViewController.swift in Sources */,
+				B7A9E0041F70B96900372DA0 /* Hello.swift in Sources */,
 				B7CDCA611F7071C200001ADC /* AppDelegate.swift in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
 /* End PBXSourcesBuildPhase section */
+
+/* Begin PBXTargetDependency section */
+		B7A9DFFD1F70B91E00372DA0 /* PBXTargetDependency */ = {
+			isa = PBXTargetDependency;
+			target = B7A9DFF61F70B91E00372DA0 /* EratPlayground */;
+			targetProxy = B7A9DFFC1F70B91E00372DA0 /* PBXContainerItemProxy */;
+		};
+/* End PBXTargetDependency section */
 
 /* Begin PBXVariantGroup section */
 		B7CDCA641F7071C200001ADC /* Main.storyboard */ = {
@@ -191,6 +291,57 @@
 /* End PBXVariantGroup section */
 
 /* Begin XCBuildConfiguration section */
+		B7A9E0001F70B91E00372DA0 /* Debug */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				CLANG_ENABLE_MODULES = YES;
+				CODE_SIGN_IDENTITY = "";
+				CODE_SIGN_STYLE = Automatic;
+				CURRENT_PROJECT_VERSION = 1;
+				DEFINES_MODULE = YES;
+				DEVELOPMENT_TEAM = H83DTQE69D;
+				DYLIB_COMPATIBILITY_VERSION = 1;
+				DYLIB_CURRENT_VERSION = 1;
+				DYLIB_INSTALL_NAME_BASE = "@rpath";
+				INFOPLIST_FILE = EratPlayground/Info.plist;
+				INSTALL_PATH = "$(LOCAL_LIBRARY_DIR)/Frameworks";
+				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/Frameworks @loader_path/Frameworks";
+				PRODUCT_BUNDLE_IDENTIFIER = "com.doug-harper.EratPlayground";
+				PRODUCT_NAME = "$(TARGET_NAME:c99extidentifier)";
+				SKIP_INSTALL = YES;
+				SWIFT_OPTIMIZATION_LEVEL = "-Onone";
+				SWIFT_VERSION = 4.0;
+				TARGETED_DEVICE_FAMILY = "1,2";
+				VERSIONING_SYSTEM = "apple-generic";
+				VERSION_INFO_PREFIX = "";
+			};
+			name = Debug;
+		};
+		B7A9E0011F70B91E00372DA0 /* Release */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				CLANG_ENABLE_MODULES = YES;
+				CODE_SIGN_IDENTITY = "";
+				CODE_SIGN_STYLE = Automatic;
+				CURRENT_PROJECT_VERSION = 1;
+				DEFINES_MODULE = YES;
+				DEVELOPMENT_TEAM = H83DTQE69D;
+				DYLIB_COMPATIBILITY_VERSION = 1;
+				DYLIB_CURRENT_VERSION = 1;
+				DYLIB_INSTALL_NAME_BASE = "@rpath";
+				INFOPLIST_FILE = EratPlayground/Info.plist;
+				INSTALL_PATH = "$(LOCAL_LIBRARY_DIR)/Frameworks";
+				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/Frameworks @loader_path/Frameworks";
+				PRODUCT_BUNDLE_IDENTIFIER = "com.doug-harper.EratPlayground";
+				PRODUCT_NAME = "$(TARGET_NAME:c99extidentifier)";
+				SKIP_INSTALL = YES;
+				SWIFT_VERSION = 4.0;
+				TARGETED_DEVICE_FAMILY = "1,2";
+				VERSIONING_SYSTEM = "apple-generic";
+				VERSION_INFO_PREFIX = "";
+			};
+			name = Release;
+		};
 		B7CDCA6D1F7071C200001ADC /* Debug */ = {
 			isa = XCBuildConfiguration;
 			buildSettings = {
@@ -301,6 +452,7 @@
 		B7CDCA701F7071C200001ADC /* Debug */ = {
 			isa = XCBuildConfiguration;
 			buildSettings = {
+				ALWAYS_EMBED_SWIFT_STANDARD_LIBRARIES = YES;
 				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
 				CODE_SIGN_STYLE = Automatic;
 				DEVELOPMENT_TEAM = H83DTQE69D;
@@ -316,6 +468,7 @@
 		B7CDCA711F7071C200001ADC /* Release */ = {
 			isa = XCBuildConfiguration;
 			buildSettings = {
+				ALWAYS_EMBED_SWIFT_STANDARD_LIBRARIES = YES;
 				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
 				CODE_SIGN_STYLE = Automatic;
 				DEVELOPMENT_TEAM = H83DTQE69D;
@@ -331,6 +484,15 @@
 /* End XCBuildConfiguration section */
 
 /* Begin XCConfigurationList section */
+		B7A9E0021F70B91E00372DA0 /* Build configuration list for PBXNativeTarget "EratPlayground" */ = {
+			isa = XCConfigurationList;
+			buildConfigurations = (
+				B7A9E0001F70B91E00372DA0 /* Debug */,
+				B7A9E0011F70B91E00372DA0 /* Release */,
+			);
+			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
+		};
 		B7CDCA581F7071C200001ADC /* Build configuration list for PBXProject "Eratosthenes" */ = {
 			isa = XCConfigurationList;
 			buildConfigurations = (
