@@ -12,6 +12,8 @@
 		B7A9DFFF1F70B91E00372DA0 /* EratPlayground.framework in Embed Frameworks */ = {isa = PBXBuildFile; fileRef = B7A9DFF71F70B91E00372DA0 /* EratPlayground.framework */; settings = {ATTRIBUTES = (CodeSignOnCopy, RemoveHeadersOnCopy, ); }; };
 		B7A9E0041F70B96900372DA0 /* Hello.swift in Sources */ = {isa = PBXBuildFile; fileRef = B7A9E0031F70B96900372DA0 /* Hello.swift */; };
 		B7A9E0051F70B96900372DA0 /* Hello.swift in Sources */ = {isa = PBXBuildFile; fileRef = B7A9E0031F70B96900372DA0 /* Hello.swift */; };
+		B7A9E00A1F71829200372DA0 /* BasicProject+Extensions.swift in Sources */ = {isa = PBXBuildFile; fileRef = B7A9E0091F71829200372DA0 /* BasicProject+Extensions.swift */; };
+		B7A9E00C1F7182F100372DA0 /* Date+Extensions.swift in Sources */ = {isa = PBXBuildFile; fileRef = B7A9E00B1F7182F100372DA0 /* Date+Extensions.swift */; };
 		B7CDCA611F7071C200001ADC /* AppDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = B7CDCA601F7071C200001ADC /* AppDelegate.swift */; };
 		B7CDCA631F7071C200001ADC /* ViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = B7CDCA621F7071C200001ADC /* ViewController.swift */; };
 		B7CDCA661F7071C200001ADC /* Main.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = B7CDCA641F7071C200001ADC /* Main.storyboard */; };
@@ -48,6 +50,8 @@
 		B7A9DFF91F70B91E00372DA0 /* EratPlayground.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = EratPlayground.h; sourceTree = "<group>"; };
 		B7A9DFFA1F70B91E00372DA0 /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
 		B7A9E0031F70B96900372DA0 /* Hello.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Hello.swift; sourceTree = "<group>"; };
+		B7A9E0091F71829200372DA0 /* BasicProject+Extensions.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = "BasicProject+Extensions.swift"; sourceTree = "<group>"; };
+		B7A9E00B1F7182F100372DA0 /* Date+Extensions.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = "Date+Extensions.swift"; sourceTree = "<group>"; };
 		B7CDCA5D1F7071C200001ADC /* Eratosthenes.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = Eratosthenes.app; sourceTree = BUILT_PRODUCTS_DIR; };
 		B7CDCA601F7071C200001ADC /* AppDelegate.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AppDelegate.swift; sourceTree = "<group>"; };
 		B7CDCA621F7071C200001ADC /* ViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ViewController.swift; sourceTree = "<group>"; };
@@ -88,6 +92,15 @@
 			path = EratPlayground;
 			sourceTree = "<group>";
 		};
+		B7A9E00D1F7183F900372DA0 /* CommonExtensions */ = {
+			isa = PBXGroup;
+			children = (
+				B7A9E0091F71829200372DA0 /* BasicProject+Extensions.swift */,
+				B7A9E00B1F7182F100372DA0 /* Date+Extensions.swift */,
+			);
+			path = CommonExtensions;
+			sourceTree = "<group>";
+		};
 		B7CDCA541F7071C200001ADC = {
 			isa = PBXGroup;
 			children = (
@@ -110,6 +123,7 @@
 		B7CDCA5F1F7071C200001ADC /* Eratosthenes */ = {
 			isa = PBXGroup;
 			children = (
+				B7A9E00D1F7183F900372DA0 /* CommonExtensions */,
 				B7CDCA721F7072D400001ADC /* HelperClasses-Instruments */,
 				B7CDCA601F7071C200001ADC /* AppDelegate.swift */,
 				B7CDCA621F7071C200001ADC /* ViewController.swift */,
@@ -258,6 +272,8 @@
 				B7CDCA631F7071C200001ADC /* ViewController.swift in Sources */,
 				B7A9E0041F70B96900372DA0 /* Hello.swift in Sources */,
 				B7CDCA611F7071C200001ADC /* AppDelegate.swift in Sources */,
+				B7A9E00C1F7182F100372DA0 /* Date+Extensions.swift in Sources */,
+				B7A9E00A1F71829200372DA0 /* BasicProject+Extensions.swift in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
