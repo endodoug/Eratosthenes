@@ -5,3 +5,10 @@ import EratPlayground
 
 let eratosthenes = Hello()
 eratosthenes.sayHello()
+
+let someString = "Some String needs, characters deletedor removed"
+print(someString)
+String.deletingCharacters(someString)
+
+
+

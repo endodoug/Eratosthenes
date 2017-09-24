@@ -9,10 +9,53 @@
 import UIKit
 
 class ViewController: UIViewController {
+  
+  // http://api.letsbuildthatapp.com/jsondecodable/course
+  
+  struct Course: Decodable {
+    let id: Int
+    let name: String
+    let link: String
+    let imageUrl: String
+    
+//    init(json: [String: Any]) {
+//      id = json["id"] as? Int ?? -1
+//      name = json["name"] as? String ?? ""
+//      link = json["link"] as? String ?? ""
+//      imageUrl = json["imageUrl"] as? String ?? ""
+//    }
+  }
 
   override func viewDidLoad() {
     super.viewDidLoad()
-    // Do any additional setup after loading the view, typically from a nib.
+    
+    let jsonURLString: String = "https://api.letsbuildthatapp.com/jsondecodable/course"
+    guard let url = URL(string: jsonURLString) else { return }
+    
+    URLSession.shared.dataTask(with: url) { (data, response, err) in
+      // check for err
+      // could check for response status 200
+      
+      guard let data = data else { return }
+      
+//      let dataAsString = String(data: data, encoding: .utf8)
+//      print(dataAsString)
+      do {
+        
+        let course = try
+          JSONDecoder().decode(Course.self, from: data)
+        print(course.name)
+        
+      } catch let jsonErr {
+        print("error deserializing json: ", jsonErr)
+      }
+      
+    }.resume()
+    
+    
+//    let myCourse = Course(id: 1, name: "my course", link: "some link", imageURL: "some image URL")
+//    print(myCourse)
+    
   }
 
   override func didReceiveMemoryWarning() {
