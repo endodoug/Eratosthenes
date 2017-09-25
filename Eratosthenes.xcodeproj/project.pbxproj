@@ -7,6 +7,7 @@
 	objects = {
 
 /* Begin PBXBuildFile section */
+		B74378D31F796F680017AF9B /* JSONParsing.swift in Sources */ = {isa = PBXBuildFile; fileRef = B74378D21F796F680017AF9B /* JSONParsing.swift */; };
 		B7A9DFFB1F70B91E00372DA0 /* EratPlayground.h in Headers */ = {isa = PBXBuildFile; fileRef = B7A9DFF91F70B91E00372DA0 /* EratPlayground.h */; settings = {ATTRIBUTES = (Public, ); }; };
 		B7A9DFFE1F70B91E00372DA0 /* EratPlayground.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = B7A9DFF71F70B91E00372DA0 /* EratPlayground.framework */; };
 		B7A9DFFF1F70B91E00372DA0 /* EratPlayground.framework in Embed Frameworks */ = {isa = PBXBuildFile; fileRef = B7A9DFF71F70B91E00372DA0 /* EratPlayground.framework */; settings = {ATTRIBUTES = (CodeSignOnCopy, RemoveHeadersOnCopy, ); }; };
@@ -48,6 +49,7 @@
 /* End PBXCopyFilesBuildPhase section */
 
 /* Begin PBXFileReference section */
+		B74378D21F796F680017AF9B /* JSONParsing.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = JSONParsing.swift; sourceTree = "<group>"; };
 		B7A9DFF71F70B91E00372DA0 /* EratPlayground.framework */ = {isa = PBXFileReference; explicitFileType = wrapper.framework; includeInIndex = 0; path = EratPlayground.framework; sourceTree = BUILT_PRODUCTS_DIR; };
 		B7A9DFF91F70B91E00372DA0 /* EratPlayground.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = EratPlayground.h; sourceTree = "<group>"; };
 		B7A9DFFA1F70B91E00372DA0 /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
@@ -131,6 +133,7 @@
 				B7CDCA721F7072D400001ADC /* HelperClasses-Instruments */,
 				B7CDCA601F7071C200001ADC /* AppDelegate.swift */,
 				B7CDCA621F7071C200001ADC /* ViewController.swift */,
+				B74378D21F796F680017AF9B /* JSONParsing.swift */,
 				B7CDCA641F7071C200001ADC /* Main.storyboard */,
 				B7CDCA671F7071C200001ADC /* Assets.xcassets */,
 				B7CDCA691F7071C200001ADC /* LaunchScreen.storyboard */,
@@ -276,6 +279,7 @@
 			files = (
 				B7CDCA631F7071C200001ADC /* ViewController.swift in Sources */,
 				B7A9E0041F70B96900372DA0 /* Hello.swift in Sources */,
+				B74378D31F796F680017AF9B /* JSONParsing.swift in Sources */,
 				B7CDCA611F7071C200001ADC /* AppDelegate.swift in Sources */,
 				B7A9E00C1F7182F100372DA0 /* Date+Extensions.swift in Sources */,
 				B7C8E0BA1F775C31003382BC /* String+Extension.swift in Sources */,
