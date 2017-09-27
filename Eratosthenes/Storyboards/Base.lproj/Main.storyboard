@@ -50,10 +50,10 @@
             </objects>
             <point key="canvasLocation" x="480.80000000000001" y="133.5832083958021"/>
         </scene>
-        <!--View Controller-->
+        <!--Bovada Feed Controller-->
         <scene sceneID="p9J-Xw-46F">
             <objects>
-                <viewController id="vj5-0o-p7r" sceneMemberID="viewController">
+                <viewController id="vj5-0o-p7r" customClass="BovadaFeedController" customModule="Eratosthenes" customModuleProvider="target" sceneMemberID="viewController">
                     <view key="view" contentMode="scaleToFill" id="bs6-zh-f5i">
                         <rect key="frame" x="0.0" y="0.0" width="375" height="667"/>
                         <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
