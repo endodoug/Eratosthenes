@@ -17,18 +17,30 @@
                         <rect key="frame" x="0.0" y="0.0" width="375" height="667"/>
                         <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
                         <subviews>
-                            <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="rEz-Df-Ftf">
-                                <rect key="frame" x="140" y="318" width="95" height="30"/>
-                                <state key="normal" title="JSON Parsing"/>
-                                <connections>
-                                    <segue destination="KHi-Gs-2tt" kind="show" id="lDs-pJ-W0A"/>
-                                </connections>
-                            </button>
+                            <stackView opaque="NO" contentMode="scaleToFill" axis="vertical" spacing="24" translatesAutoresizingMaskIntoConstraints="NO" id="1CW-kv-IYo">
+                                <rect key="frame" x="140" y="291.5" width="95" height="84"/>
+                                <subviews>
+                                    <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="rEz-Df-Ftf">
+                                        <rect key="frame" x="0.0" y="0.0" width="95" height="30"/>
+                                        <state key="normal" title="JSON Parsing"/>
+                                        <connections>
+                                            <segue destination="KHi-Gs-2tt" kind="show" id="lDs-pJ-W0A"/>
+                                        </connections>
+                                    </button>
+                                    <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="6Tl-ff-LGA">
+                                        <rect key="frame" x="0.0" y="54" width="95" height="30"/>
+                                        <state key="normal" title="Bovada Feed"/>
+                                        <connections>
+                                            <segue destination="vj5-0o-p7r" kind="show" id="8d2-YC-fjv"/>
+                                        </connections>
+                                    </button>
+                                </subviews>
+                            </stackView>
                         </subviews>
                         <color key="backgroundColor" red="1" green="1" blue="1" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
                         <constraints>
-                            <constraint firstItem="rEz-Df-Ftf" firstAttribute="centerY" secondItem="8bC-Xf-vdC" secondAttribute="centerY" id="H1h-DB-EO9"/>
-                            <constraint firstItem="rEz-Df-Ftf" firstAttribute="centerX" secondItem="8bC-Xf-vdC" secondAttribute="centerX" id="qgr-SZ-rfh"/>
+                            <constraint firstItem="1CW-kv-IYo" firstAttribute="centerX" secondItem="8bC-Xf-vdC" secondAttribute="centerX" id="DeR-CR-h6V"/>
+                            <constraint firstItem="1CW-kv-IYo" firstAttribute="centerY" secondItem="8bC-Xf-vdC" secondAttribute="centerY" id="sHe-XL-r9q"/>
                         </constraints>
                         <viewLayoutGuide key="safeArea" id="6Tk-OE-BBY"/>
                     </view>
@@ -37,6 +49,34 @@
                 <placeholder placeholderIdentifier="IBFirstResponder" id="dkx-z0-nzr" sceneMemberID="firstResponder"/>
             </objects>
             <point key="canvasLocation" x="480.80000000000001" y="133.5832083958021"/>
+        </scene>
+        <!--View Controller-->
+        <scene sceneID="p9J-Xw-46F">
+            <objects>
+                <viewController id="vj5-0o-p7r" sceneMemberID="viewController">
+                    <view key="view" contentMode="scaleToFill" id="bs6-zh-f5i">
+                        <rect key="frame" x="0.0" y="0.0" width="375" height="667"/>
+                        <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
+                        <subviews>
+                            <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="Label" textAlignment="natural" lineBreakMode="tailTruncation" numberOfLines="0" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="fUC-uy-Une">
+                                <rect key="frame" x="12" y="104" width="351" height="21"/>
+                                <fontDescription key="fontDescription" type="system" pointSize="17"/>
+                                <nil key="textColor"/>
+                                <nil key="highlightedColor"/>
+                            </label>
+                        </subviews>
+                        <color key="backgroundColor" white="1" alpha="1" colorSpace="calibratedWhite"/>
+                        <constraints>
+                            <constraint firstItem="fUC-uy-Une" firstAttribute="top" secondItem="cLZ-fb-lGn" secondAttribute="top" constant="40" id="Ebv-WO-jBv"/>
+                            <constraint firstItem="cLZ-fb-lGn" firstAttribute="trailing" secondItem="fUC-uy-Une" secondAttribute="trailing" constant="12" id="U9T-s4-Kvc"/>
+                            <constraint firstItem="fUC-uy-Une" firstAttribute="leading" secondItem="cLZ-fb-lGn" secondAttribute="leading" constant="12" id="gtk-Ow-6nS"/>
+                        </constraints>
+                        <viewLayoutGuide key="safeArea" id="cLZ-fb-lGn"/>
+                    </view>
+                </viewController>
+                <placeholder placeholderIdentifier="IBFirstResponder" id="zv3-2C-lUI" userLabel="First Responder" sceneMemberID="firstResponder"/>
+            </objects>
+            <point key="canvasLocation" x="1276" y="905"/>
         </scene>
         <!--Parsing-->
         <scene sceneID="Kep-gJ-xei">
