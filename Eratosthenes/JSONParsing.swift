@@ -60,7 +60,6 @@ class JSONParsing: UIViewController {
       
       }.resume()
     
-    
     //    let myCourse = Course(id: 1, name: "my course", link: "some link", imageUrl: "some image URL")
     //    print(myCourse)
   

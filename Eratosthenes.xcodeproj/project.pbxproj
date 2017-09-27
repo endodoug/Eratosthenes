@@ -88,6 +88,15 @@
 /* End PBXFrameworksBuildPhase section */
 
 /* Begin PBXGroup section */
+		B7154AA61F7B4FB10068F7AC /* Storyboards */ = {
+			isa = PBXGroup;
+			children = (
+				B7CDCA641F7071C200001ADC /* Main.storyboard */,
+				B7CDCA691F7071C200001ADC /* LaunchScreen.storyboard */,
+			);
+			path = Storyboards;
+			sourceTree = "<group>";
+		};
 		B7A9DFF81F70B91E00372DA0 /* EratPlayground */ = {
 			isa = PBXGroup;
 			children = (
@@ -134,9 +143,8 @@
 				B7CDCA601F7071C200001ADC /* AppDelegate.swift */,
 				B7CDCA621F7071C200001ADC /* ViewController.swift */,
 				B74378D21F796F680017AF9B /* JSONParsing.swift */,
-				B7CDCA641F7071C200001ADC /* Main.storyboard */,
+				B7154AA61F7B4FB10068F7AC /* Storyboards */,
 				B7CDCA671F7071C200001ADC /* Assets.xcassets */,
-				B7CDCA691F7071C200001ADC /* LaunchScreen.storyboard */,
 				B7CDCA6C1F7071C200001ADC /* Info.plist */,
 			);
 			path = Eratosthenes;
