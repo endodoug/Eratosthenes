@@ -15,7 +15,6 @@ import UIKit
  */
 
 struct Politics: Decodable {
-  let events: String?
   let id: Int?
 }
 
@@ -30,10 +29,17 @@ class BovadaFeedController: UIViewController {
     URLSession.shared.dataTask(with: url) { (data, response, err) in
       // check for err
       // could check for response status 200
-          guard let data = data else { return }
+      guard let data = data else { return }
       
-          let dataAsString = String(data: data, encoding: .utf8)
-          print(dataAsString)
+//      let dataAsString = String(data: data, encoding: .utf8)
+//      print(dataAsString ?? "Data is not loading")
+      
+      do {
+        let politicalEvents = try JSONDecoder().decode(Politics.self, from: data)
+        print(politicalEvents.id ?? "no data found")
+      } catch let jsonErr {
+        print("error decoding JSON: ", jsonErr)
+      }
       
       }.resume()
     
