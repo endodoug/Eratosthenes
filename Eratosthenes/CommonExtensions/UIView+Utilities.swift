@@ -1,40 +1,44 @@
 //
-//  ViewController.swift
-//  Eratosthenes
+//  UIView+Utilities.swift
+//  Codemine
 //
-//  Created by doug harper on 9/18/17.
-//  Copyright © 2017 Doug Harper. All rights reserved.
+//  Created by Marius Constantinescu on 18/02/16.
+//  Copyright © 2016 Nodes. All rights reserved.
 //
 
+import Foundation
 import UIKit
 
-class ViewController: UIViewController {
-
-  @IBOutlet weak var blueView: UIView!
-  
-  override func viewDidLoad() {
-    super.viewDidLoad()
-    
-    blueView.roundViewCorners(.bottomRight, radius: 50)
-    
-    let redView: UIView = {
-      let view = UIView()
-      view.frame = CGRect(x: 0, y: 0, width: 100, height: 100)
-      view.backgroundColor = .red
-      view.roundViewCorners(UIRectCorner.allCorners, radius: 20)
-      return view
-    } ()
-    
-    view.addSubview(redView)
-    
-  }
-
-}
-
 public extension UIView {
-
+  /**
+   Assign a `nibName` to a UIView.
+   Later on you can call this `UIView` by its `nibName`.
+   
+   - Parameter name: The name that the UIView will get as its `name` assigned as a `String`.
+   - Returns: `Generics type`.
+   */
+  public static func from<T>(nibWithName:String) -> T? {
+    let view = UINib(nibName: nibWithName, bundle: nil).instantiate(withOwner: nil, options: nil).first as? T
+    return view
+  }
+  
+  /**
+   Rounded corners for a `UIView`.
+   
+   - Parameters:
+   - corners: Defines which corners should be rounded.
+   - radius: Defines the radius of the round corners as a `CGFloat`.
+   */
+  //  if @available(iOS 11.0, *)  {
+  //  public func roundViewCorners(_ corners: CACornerMask, radius: CGFloat) {
+  //  self.clipsToBounds = true
+  //  self.layer.cornerRadius = radius
+  //  self.layer.maskedCorners = corners
+  //  }
+  //  } else { }
+  
   public func roundViewCorners(_ corners: UIRectCorner, radius: CGFloat) {
-
+    
     if #available(iOS 11.0, *) {
       self.layer.cornerRadius = radius
       self.layer.maskedCorners = getMaskedCorners(from: corners)
@@ -46,7 +50,7 @@ public extension UIView {
       self.layer.mask = mask
     }
   }
-
+  
   private func getMaskedCorners(from corners: UIRectCorner) -> CACornerMask {
     var maskedCorners: CACornerMask = []
     if corners.contains(.bottomLeft) {
@@ -64,10 +68,10 @@ public extension UIView {
     if corners.contains(.allCorners) {
       maskedCorners = [.layerMaxXMaxYCorner, .layerMaxXMinYCorner, .layerMinXMaxYCorner, .layerMinXMinYCorner]
     }
-
+    
     return maskedCorners
   }
-
+  
 }
 
 
