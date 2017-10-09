@@ -6,9 +6,8 @@ import EratPlayground
 let eratosthenes = Hello()
 eratosthenes.sayHello()
 
-let someString = "Some String needs, characters deletedor removed"
+let someString = "Some String needs, characters deleted or removed"
 print(someString)
-String.deletingCharacters(someString)
 
 
 

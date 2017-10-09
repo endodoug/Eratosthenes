@@ -5,117 +5,9 @@
     </device>
     <dependencies>
         <plugIn identifier="com.apple.InterfaceBuilder.IBCocoaTouchPlugin" version="13173"/>
-        <capability name="Safe area layout guides" minToolsVersion="9.0"/>
         <capability name="documents saved in the Xcode 8 format" minToolsVersion="8.0"/>
     </dependencies>
     <scenes>
-        <!--View Controller-->
-        <scene sceneID="tne-QT-ifu">
-            <objects>
-                <viewController id="BYZ-38-t0r" customClass="ViewController" customModule="Eratosthenes" customModuleProvider="target" sceneMemberID="viewController">
-                    <view key="view" contentMode="scaleToFill" id="8bC-Xf-vdC">
-                        <rect key="frame" x="0.0" y="0.0" width="375" height="667"/>
-                        <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
-                        <subviews>
-                            <stackView opaque="NO" contentMode="scaleToFill" axis="vertical" spacing="24" translatesAutoresizingMaskIntoConstraints="NO" id="1CW-kv-IYo">
-                                <rect key="frame" x="140" y="291.5" width="95" height="84"/>
-                                <subviews>
-                                    <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="rEz-Df-Ftf">
-                                        <rect key="frame" x="0.0" y="0.0" width="95" height="30"/>
-                                        <state key="normal" title="JSON Parsing"/>
-                                        <connections>
-                                            <segue destination="KHi-Gs-2tt" kind="show" id="lDs-pJ-W0A"/>
-                                        </connections>
-                                    </button>
-                                    <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="6Tl-ff-LGA">
-                                        <rect key="frame" x="0.0" y="54" width="95" height="30"/>
-                                        <state key="normal" title="Bovada Feed"/>
-                                        <connections>
-                                            <segue destination="vj5-0o-p7r" kind="show" id="8d2-YC-fjv"/>
-                                        </connections>
-                                    </button>
-                                </subviews>
-                            </stackView>
-                            <view contentMode="scaleToFill" fixedFrame="YES" translatesAutoresizingMaskIntoConstraints="NO" id="LxC-eU-lW1">
-                                <rect key="frame" x="67" y="105" width="240" height="128"/>
-                                <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
-                                <color key="backgroundColor" red="0.0" green="0.50196081400000003" blue="1" alpha="1" colorSpace="calibratedRGB"/>
-                            </view>
-                        </subviews>
-                        <color key="backgroundColor" red="1" green="1" blue="1" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
-                        <constraints>
-                            <constraint firstItem="1CW-kv-IYo" firstAttribute="centerX" secondItem="8bC-Xf-vdC" secondAttribute="centerX" id="DeR-CR-h6V"/>
-                            <constraint firstItem="1CW-kv-IYo" firstAttribute="centerY" secondItem="8bC-Xf-vdC" secondAttribute="centerY" id="sHe-XL-r9q"/>
-                        </constraints>
-                        <viewLayoutGuide key="safeArea" id="6Tk-OE-BBY"/>
-                    </view>
-                    <navigationItem key="navigationItem" id="BmZ-2A-3X5"/>
-                    <connections>
-                        <outlet property="blueView" destination="LxC-eU-lW1" id="Vfr-DZ-oih"/>
-                    </connections>
-                </viewController>
-                <placeholder placeholderIdentifier="IBFirstResponder" id="dkx-z0-nzr" sceneMemberID="firstResponder"/>
-            </objects>
-            <point key="canvasLocation" x="480.80000000000001" y="133.5832083958021"/>
-        </scene>
-        <!--Bovada Feed Controller-->
-        <scene sceneID="p9J-Xw-46F">
-            <objects>
-                <viewController id="vj5-0o-p7r" customClass="BovadaFeedController" customModule="Eratosthenes" customModuleProvider="target" sceneMemberID="viewController">
-                    <view key="view" contentMode="scaleToFill" id="bs6-zh-f5i">
-                        <rect key="frame" x="0.0" y="0.0" width="375" height="667"/>
-                        <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
-                        <subviews>
-                            <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="Label" textAlignment="natural" lineBreakMode="tailTruncation" numberOfLines="0" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="fUC-uy-Une">
-                                <rect key="frame" x="12" y="104" width="351" height="21"/>
-                                <fontDescription key="fontDescription" type="system" pointSize="17"/>
-                                <nil key="textColor"/>
-                                <nil key="highlightedColor"/>
-                            </label>
-                        </subviews>
-                        <color key="backgroundColor" white="1" alpha="1" colorSpace="calibratedWhite"/>
-                        <constraints>
-                            <constraint firstItem="fUC-uy-Une" firstAttribute="top" secondItem="cLZ-fb-lGn" secondAttribute="top" constant="40" id="Ebv-WO-jBv"/>
-                            <constraint firstItem="cLZ-fb-lGn" firstAttribute="trailing" secondItem="fUC-uy-Une" secondAttribute="trailing" constant="12" id="U9T-s4-Kvc"/>
-                            <constraint firstItem="fUC-uy-Une" firstAttribute="leading" secondItem="cLZ-fb-lGn" secondAttribute="leading" constant="12" id="gtk-Ow-6nS"/>
-                        </constraints>
-                        <viewLayoutGuide key="safeArea" id="cLZ-fb-lGn"/>
-                    </view>
-                </viewController>
-                <placeholder placeholderIdentifier="IBFirstResponder" id="zv3-2C-lUI" userLabel="First Responder" sceneMemberID="firstResponder"/>
-            </objects>
-            <point key="canvasLocation" x="1276" y="905"/>
-        </scene>
-        <!--Parsing-->
-        <scene sceneID="Kep-gJ-xei">
-            <objects>
-                <viewController id="KHi-Gs-2tt" customClass="JSONParsing" customModule="Eratosthenes" customModuleProvider="target" sceneMemberID="viewController">
-                    <view key="view" contentMode="scaleToFill" id="e1t-rw-tdu">
-                        <rect key="frame" x="0.0" y="0.0" width="375" height="667"/>
-                        <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
-                        <subviews>
-                            <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="Label" textAlignment="natural" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="FXC-5k-Lqa">
-                                <rect key="frame" x="61" y="102" width="42" height="21"/>
-                                <fontDescription key="fontDescription" type="system" pointSize="17"/>
-                                <nil key="textColor"/>
-                                <nil key="highlightedColor"/>
-                            </label>
-                        </subviews>
-                        <color key="backgroundColor" white="1" alpha="1" colorSpace="calibratedWhite"/>
-                        <constraints>
-                            <constraint firstItem="FXC-5k-Lqa" firstAttribute="top" secondItem="sQk-VK-hWB" secondAttribute="top" constant="38" id="138-Il-ciz"/>
-                            <constraint firstItem="FXC-5k-Lqa" firstAttribute="leading" secondItem="sQk-VK-hWB" secondAttribute="leading" constant="61" id="AWE-hQ-xGO"/>
-                        </constraints>
-                        <viewLayoutGuide key="safeArea" id="sQk-VK-hWB"/>
-                    </view>
-                    <connections>
-                        <outlet property="label" destination="FXC-5k-Lqa" id="vxp-7r-RWV"/>
-                    </connections>
-                </viewController>
-                <placeholder placeholderIdentifier="IBFirstResponder" id="9Zy-SL-bxk" userLabel="First Responder" sceneMemberID="firstResponder"/>
-            </objects>
-            <point key="canvasLocation" x="1276" y="133.5832083958021"/>
-        </scene>
         <!--Navigation Controller-->
         <scene sceneID="OIp-bX-qvY">
             <objects>
@@ -126,9 +18,6 @@
                         <autoresizingMask key="autoresizingMask"/>
                     </navigationBar>
                     <nil name="viewControllers"/>
-                    <connections>
-                        <segue destination="BYZ-38-t0r" kind="relationship" relationship="rootViewController" id="KRg-q5-T3S"/>
-                    </connections>
                 </navigationController>
                 <placeholder placeholderIdentifier="IBFirstResponder" id="KFQ-OC-6Ia" userLabel="First Responder" sceneMemberID="firstResponder"/>
             </objects>
