@@ -9,6 +9,12 @@
 import CoreData
 
 struct CoreDataManager {
+  /**
+   Initialize a Core Data Stack
+   - Parameter name: The name of your Data Model you created.
+   - Returns: NSPersistentContainer.
+   */
+  
   static let shared = CoreDataManager()
   
   let persistentContainer: NSPersistentContainer = {
