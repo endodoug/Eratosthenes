@@ -7,6 +7,7 @@
 	objects = {
 
 /* Begin PBXBuildFile section */
+		B72411A01FA3D57A00BD7FA5 /* DataManager.swift in Sources */ = {isa = PBXBuildFile; fileRef = B724119F1FA3D57A00BD7FA5 /* DataManager.swift */; };
 		B7725D7F1F85804900B68D85 /* BasicProject+Extensions.swift in Sources */ = {isa = PBXBuildFile; fileRef = B7A9E0091F71829200372DA0 /* BasicProject+Extensions.swift */; };
 		B7725D801F85804900B68D85 /* Date+Extensions.swift in Sources */ = {isa = PBXBuildFile; fileRef = B7A9E00B1F7182F100372DA0 /* Date+Extensions.swift */; };
 		B7725D811F85804900B68D85 /* UIView+Utilities.swift in Sources */ = {isa = PBXBuildFile; fileRef = B7EF7AEF1F857D600085AF66 /* UIView+Utilities.swift */; };
@@ -51,6 +52,7 @@
 /* End PBXCopyFilesBuildPhase section */
 
 /* Begin PBXFileReference section */
+		B724119F1FA3D57A00BD7FA5 /* DataManager.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = DataManager.swift; sourceTree = "<group>"; };
 		B7A9DFF71F70B91E00372DA0 /* EratPlayground.framework */ = {isa = PBXFileReference; explicitFileType = wrapper.framework; includeInIndex = 0; path = EratPlayground.framework; sourceTree = BUILT_PRODUCTS_DIR; };
 		B7A9DFF91F70B91E00372DA0 /* EratPlayground.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = EratPlayground.h; sourceTree = "<group>"; };
 		B7A9DFFA1F70B91E00372DA0 /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
@@ -97,6 +99,14 @@
 			path = Storyboards;
 			sourceTree = "<group>";
 		};
+		B724119E1FA3D55800BD7FA5 /* CoreData */ = {
+			isa = PBXGroup;
+			children = (
+				B724119F1FA3D57A00BD7FA5 /* DataManager.swift */,
+			);
+			path = CoreData;
+			sourceTree = "<group>";
+		};
 		B7A9DFF81F70B91E00372DA0 /* EratPlayground */ = {
 			isa = PBXGroup;
 			children = (
@@ -138,11 +148,12 @@
 		B7CDCA5F1F7071C200001ADC /* Eratosthenes */ = {
 			isa = PBXGroup;
 			children = (
+				B724119E1FA3D55800BD7FA5 /* CoreData */,
 				B7A9E00D1F7183F900372DA0 /* CommonExtensions */,
 				B7CDCA721F7072D400001ADC /* HelperClasses-Instruments */,
+				B7154AA61F7B4FB10068F7AC /* Storyboards */,
 				B7CDCA601F7071C200001ADC /* AppDelegate.swift */,
 				B7CDCA621F7071C200001ADC /* ViewController.swift */,
-				B7154AA61F7B4FB10068F7AC /* Storyboards */,
 				B7CDCA671F7071C200001ADC /* Assets.xcassets */,
 				B7CDCA6C1F7071C200001ADC /* Info.plist */,
 			);
@@ -288,6 +299,7 @@
 			buildActionMask = 2147483647;
 			files = (
 				B7CDCA631F7071C200001ADC /* ViewController.swift in Sources */,
+				B72411A01FA3D57A00BD7FA5 /* DataManager.swift in Sources */,
 				B7CDCA611F7071C200001ADC /* AppDelegate.swift in Sources */,
 				B7A9E00C1F7182F100372DA0 /* Date+Extensions.swift in Sources */,
 				B7C8E0BA1F775C31003382BC /* String+Extension.swift in Sources */,
